@@ -1,4 +1,4 @@
-const regex = /.*twitch\.tv\/(videos|create|moderator)(\/.*)?/g;
+const regex = /.*twitch\.tv\/(videos|create)?(\/.*)?/g;
 chrome.action.onClicked.addListener((tab) => {
   const url = tab.url;
 
