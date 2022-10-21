@@ -1,7 +1,7 @@
-const regex = /.*twitch\.tv\/(videos|create)?(\/.*)?/g;
+const regex = /https:\/\/(www|clips).twitch.tv/;
 chrome.action.onClicked.addListener((tab) => {
   const url = tab.url;
-
+  console.log(url);
   if (!regex.test(url)) {
     console.log("You cant use this extension outside twitch");
     return;
