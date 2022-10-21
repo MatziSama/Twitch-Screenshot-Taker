@@ -15,5 +15,5 @@ container.innerHTML = svg;
 player.append(container);
 
 container.addEventListener("click", () => {
-    chrome.runtime.sendMessage({info: "takeSs"});
+    chrome.runtime.sendMessage({act: "takeSs"});
 })

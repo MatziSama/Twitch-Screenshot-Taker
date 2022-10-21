@@ -16,6 +16,7 @@ chrome.action.onClicked.addListener((tab) => {
 chrome.runtime.onMessage.addListener(
   function(request, sender) {
     if (!regex.test(sender.url)) return;
+    if (!request.act === "takeSs") return;
     
     chrome.scripting.executeScript({
       target: {tabId: sender.tab.id},
