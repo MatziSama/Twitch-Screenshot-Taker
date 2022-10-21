@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Screenshot Taker",
+  "description": "Take screenshot of any stream at real time",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Take SS!",
+    "default_icon": {
+      "16": "src/pngIconx16.png",
+      "24": "src/pngIconx24.png",
+      "32": "src/pngIconx32.png"
+    }
+  },
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "16": "src/fullIconx16.png",
+    "48": "src/fullIconx48.png",
+    "128": "src/fullIconx128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/videos/*"],
+      "css": ["style.css"],
+      "js": ["shortcut.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://*.twitch.tv/*"
+]
+}
