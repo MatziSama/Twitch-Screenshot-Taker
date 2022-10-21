@@ -23,4 +23,4 @@ Para tomar una captura de una stream debés dirigirte a un stream, para tomar un
       ![imagen03](https://i.imgur.com/gIFXGMU.jpg)
  
  - Puedes usar el atajo de teclado: `Alt + S`
- - Usar el ícono integrado en la ventana del stream <sup>(Próximamente)</sup>
+ - Usar el ícono integrado en la ventana del stream.
