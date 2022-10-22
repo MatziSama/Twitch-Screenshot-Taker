@@ -14,7 +14,7 @@
       "32": "src/pngIconx32.png"
     }
   },
-  "permissions": ["activeTab", "scripting"],
+  "permissions": ["activeTab", "scripting", "tabs"],
   "icons": {
     "16": "src/fullIconx16.png",
     "48": "src/fullIconx48.png",
@@ -22,12 +22,12 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.twitch.tv/videos/*"],
+      "matches": ["https://www.twitch.tv/videos/*", "https://www.twitch.tv/*"],
       "css": ["style.css"],
       "js": ["shortcut.js"]
     }
   ],
   "host_permissions": [
     "https://*.twitch.tv/*"
-]
+  ]
 }

@@ -1,6 +1,7 @@
 document.addEventListener("keydown", (e) => {
     if (e.code === "KeyS" && e.altKey) {
-        chrome.runtime.sendMessage({act: "TakeSs"});
+        console.log("pressed shortcut")
+        chrome.runtime.sendMessage({act: "takeSs"});
     }
 });
 

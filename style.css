@@ -16,3 +16,33 @@
     stroke: white;
     stroke-width: 20;
 }
+
+.tst-canvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 99999;
+}
+
+.tst-errorMessage {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    min-width: 200px;
+    min-height: 30px;
+    max-width: 550px;
+    z-index: var(--z-index-modal) !important;
+    background-color: var(--color-background-base);
+    border: var(--border-width-default) solid var(--color-border-base);
+    border-radius: 10px;
+    padding: 10px 15px;
+    transition: opacity 250ms ease-out;
+    font-size: 16px;
+}
+
+.tst-errorMessage.hide {
+    opacity: 0;
+}
